@@ -21,31 +21,31 @@ docker run kruase/my-vote-backend
 
 ```shell
 git clone https://github.com/digital-fracture/my-vote-backend
-cd constructor-jobs-backend
+cd my-vote-backend
 pipenv install
-pipenv run python3 server.py
+pipenv run uvicorn main:app
 ```
 
 ### Pure python 3.11
 
 Windows (PowerShell) (not tested):
 ```powershell
-git clone https://github.com/digital-fracture/constructor-jobs-backend.git
-cd constructor-jobs-backend
+git clone https://github.com/digital-fracture/my-vote-backend.git
+cd my-vote-backend
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python server.py
+uvicorn main:app
 ```
 
 Linux / MacOS:
 ```shell
-git clone https://github.com/digital-fracture/constructor-jobs-backend.git
-cd constructor-jobs-backend
+git clone https://github.com/digital-fracture/my-vote-backend.git
+cd my-vote-backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python3 server.py
+uvicorn main:app
 ```
 
 ## Stack
