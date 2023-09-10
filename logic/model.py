@@ -56,7 +56,7 @@ def get_word2vec_embeddings(document):
     for token in tokens:
         if token["text"].strip() == "":
             continue
-        if not token["analysis"]:
+        if not token.get("analysis"):
             continue
 
         lemma = token["analysis"][0]["lex"]

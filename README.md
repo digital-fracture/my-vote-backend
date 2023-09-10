@@ -4,7 +4,7 @@ This repository contains code for the server-side part of the application.
 
 ### [Website](https://front-7.vercel.app/)
 
-### [Google Colab notebook with training code]()
+### [Google Colab notebook with training code](https://colab.research.google.com/drive/1uYy6426mAx55jy4FWK1xUucn-BHRNJQr?usp=sharing)
 
 ### [GitHub repository with front-end code](https://github.com/digital-fracture/my-vote-frontend)
 
