@@ -1,0 +1,70 @@
+body {
+  width: 40%;
+  margin: 0;
+  margin-inline: 30%;
+  background-color: #2b2b2b;
+  color: #a0a0a0;
+  font-family: Inter, Roboto, sans-serif;
+  font-size: large;
+}
+
+
+fieldset {
+  padding: 1rem;
+  margin-top: 2rem;
+}
+fieldset legend {
+  font-weight: bolder;
+}
+fieldset input[type="radio"] {
+  margin: .5rem;
+}
+
+button {
+  width: 8rem;
+  height: 3rem;
+  background-color: #3a3a3a;
+  color: #a0a0a0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+  border-color: #3a3a3a;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  outline: none !important;
+  margin-top: 2rem;
+}
+button:hover {
+  background-color: transparent;
+  border: 1px solid #3a3a3a;
+}
+button:active {
+  background-color: #444444;
+  border: none;
+  border-color: #3a3a3a; /* To delete flush on turning inactive */
+}
+button::-moz-focus-inner {
+  border: none;
+}
+
+label#status {
+  visibility: hidden;
+}
+
+input[type="text"] {
+  width: 18rem;
+  background-color: #3a3a3a;
+  color: #eeeeee;
+  border-radius: 2px;
+  border: 1px solid #666666;
+  outline: none;
+  resize: none;
+}
+
+
+@media (max-width: 800px) {
+  body {
+    width: 96%;
+    margin-inline: 2%;
+  }
+}

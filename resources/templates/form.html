@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Опрос #{{ id }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Опрос #{{ id }}</h1>
+    <h2>{{ title }}</h2>
+  </header>
+
+  <main>
+    <form>
+      {% for question in questions %}
+        <fieldset>
+          <legend>{{ loop.index0 + 1 }}. {{ question['question'] }}</legend>
+
+          <input type="text" maxlength="30" name="{{ question['id'] }}">
+        </fieldset>
+      {% endfor %}
+    </form>
+
+    <div>
+      <button>Отправить</button>
+      <label id="status">Успешно отправлено</label>
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', path='form.js') }}"></script>
+</body>
+</html>

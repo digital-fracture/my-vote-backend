@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+orjson = "*"
+charset-normalizer = "*"
+aiofiles = "*"
+fastapi = "*"
+pydantic = "*"
+python-multipart = "*"
+jinja2 = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+supabase = "*"
+wordcloud = "*"
+pillow = "*"
+numpy = "*"
+gensim = "*"
+pandas = "*"
+scikit-learn = "*"
+pymystem3 = "*"
+pyclustering = "*"
+torch = "*"
+transformers = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
