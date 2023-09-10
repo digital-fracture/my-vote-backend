@@ -73,6 +73,9 @@ def get_word2vec_embeddings(document):
 
         document_vec.append(word_vec)
 
+    if not document_vec:
+        document_vec.append(zero_array)
+
     return np.mean(document_vec, axis=0)
 
 
